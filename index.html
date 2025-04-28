@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet/style.css">
+    <script>
+    function myFunction() {
+        const x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+
+       function preferedBrowser(){
+        prefer = document.forms[0].browsers.value;
+        alert("You prefer browsing internet with " + prefer);}
+    </script>
 </head>
 <body>
     <p>This is my main page</p>
+    <h2>The onblur Attribute</h2>
+    
+    Enter your name: <input type="text" id="fname" onblur="myFunction()">
+
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <!-- <form>
+        Choose which browser you prefer:
+        <select id="browsers" onchange="preferedBrowser()">
+            <option value="Chrome">Chrome</option>
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox</option>
+        </select>
+    </form> -->
 </body>
 </html>
+
+
+x=3.7
+print(int(x))
